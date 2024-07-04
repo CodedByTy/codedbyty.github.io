@@ -1,32 +1,24 @@
-// gitprofile.config.ts
-
 const CONFIG = {
   github: {
-    username: 'CodedByTy', // Your GitHub org/user name. (This is the only required config)
+    username: 'CodedByTy',
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
   base: '/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
+      display: true,
       header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      mode: 'automatic',
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        sortBy: 'stars',
+        limit: 8,
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: false,
+          projects: [],
         },
       },
     },
     external: {
       header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
       projects: [
         {
           title: 'BilligerHost',
@@ -56,11 +48,11 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
   },
   skills: [
-    'HTML5',
-    'CSS3',
+    'HTML',
+    'CSS',
     'JavaScript',
     'React.js',
     'Tailwind',
@@ -92,7 +84,7 @@ const CONFIG = {
     },
   ],
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: '',
   },
   hotjar: {
     id: '',
@@ -101,18 +93,12 @@ const CONFIG = {
   themeConfig: {
     defaultTheme: 'dark',
 
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: false,
 
-    // Display the ring in Profile picture
     displayAvatarRing: true,
 
-    // Available themes. To remove any theme, exclude from here.
     themes: [
       // 'light',
       'dark',
@@ -149,7 +135,6 @@ const CONFIG = {
       'procyon',
     ],
 
-    // Custom theme, applied to `procyon` theme
     customTheme: {
       primary: '#fc055b',
       secondary: '#219aaf',
