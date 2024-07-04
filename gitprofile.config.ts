@@ -47,7 +47,7 @@ const CONFIG = {
     },
   },
   seo: {
-    title: 'Portfolio of LearnWithTyler',
+    title: 'Portfolio of CodedByTy',
     description: '',
     imageURL: '',
   },
